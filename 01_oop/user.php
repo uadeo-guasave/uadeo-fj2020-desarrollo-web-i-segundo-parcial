@@ -1,4 +1,6 @@
 <?php
+require_once 'my_connection.php';
+
 class User {
     // propiedades o atributos
     private $id;
@@ -38,6 +40,17 @@ class User {
             $this->fields[$name] = $value;
         }
     }
+
+    public static function getById($id) {
+        // TODO: definir la consulta
+        // TODO: abrir la conexion a la base de datos
+        // TODO: ejecutar la consulta
+        // TODO: evaluar el resultado
+        // TODO: retornar null para cuando no se encuentra o un objeto tipo User
+    }
+
+    public static function getByName($name) {}
+    public static function getByEmail($email) {}
 }
 
 // crear un objeto (instanciar la clase User)
