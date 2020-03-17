@@ -1,27 +1,41 @@
 <?php
 class User {
     // propiedades o atributos
-    private $data = [
-        'id' => '',
-        'name' => '',
-        'passwd' => '',
-        'email' => '',
-        'firstname' => '',
-        'lastname' => ''
-    ];
+    private $id;
+    private $fields;
+
+    // Constructor
+    public function __construct() {
+        $this->id = null;
+        $this->fields = [
+            'name' => '',
+            'passwd' => '',
+            'email' => '',
+            'firstname' => '',
+            'lastname' => ''
+        ];
+    }
 
     // __get() y __set()
     public function __get($name) {
-        if (array_key_exists($name, $this->data)) {
-            return $this->data[$name];
+        if ($name == 'id') {
+            return $this->id;
+        }
+
+        if (array_key_exists($name, $this->fields)) {
+            return $this->fields[$name];
         } else {
             return null;
         }
     }
 
     public function __set($name, $value) {
-        if (array_key_exists($name, $this->data)) {
-            $this->data[$name] = $value;
+        if ($name == 'id') {
+            $this->id = $value;
+        }
+
+        if (array_key_exists($name, $this->fields)) {
+            $this->fields[$name] = $value;
         }
     }
 }
