@@ -1,13 +1,15 @@
 <?php
 require_once 'my_connection.php';
 
-class User {
+class User extends Model {
     // propiedades o atributos
     private $id;
     private $fields;
+    public $table = "users";
 
     // Constructor
     public function __construct() {
+        parent::$table = $this->table;
         $this->id = null;
         $this->fields = [
             'name' => '',
