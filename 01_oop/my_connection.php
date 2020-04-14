@@ -1,5 +1,6 @@
 <?php
 // nombres de clase en formato StudlyCaps
+// prettier-ignore
 class MyConnection extends mysqli {
     public function __construct() {
         $conn = parent::__construct('127.0.0.1','demo','123','demo',3308);

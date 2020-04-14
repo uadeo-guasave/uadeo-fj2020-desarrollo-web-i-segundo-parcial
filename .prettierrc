@@ -1,6 +1,0 @@
-phpVersion: "7.4"
-printWidth: 80
-tabWidth: 4
-useTabs: false
-braceStyle: "1tbs"
-trailingCommaPHP: false

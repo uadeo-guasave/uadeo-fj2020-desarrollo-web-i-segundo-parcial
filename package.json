@@ -1,7 +1,7 @@
 {
   "name": "segundo-parcial",
   "version": "1.0.0",
-  "description": "### Desarrollo Web I Prácticas de segundo parcial",
+  "description": "Proyecto de segundo parcial",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,12 @@
     "type": "git",
     "url": "git+https://github.com/udo-guasave/uadeo-fj2020-desarrollo-web-i-segundo-parcial.git"
   },
-  "author": "",
+  "keywords": [
+    "php",
+    "mvc",
+    "node"
+  ],
+  "author": "Bidkar Aragón Cárdenas",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/udo-guasave/uadeo-fj2020-desarrollo-web-i-segundo-parcial/issues"
