@@ -13,6 +13,7 @@ MVC Directory Structure
         models*.php
         controllers/
             controllers*.php
+        views
     libs/
         libs*.php
     public/

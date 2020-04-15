@@ -9,9 +9,11 @@ class Usuario extends Persona {
 
     /**
      * Metodo para generar contraseñas utilizando el algoritmo de encriptación bcrypt
+     * 
+     * @param string $cadena Cadena que va a ser encriptada
      */
     public function generarConstraseña(string $cadena) {
-        $this->contraseña = password_hash($cadena, PASSWORD_DEFAULT);
+        $this->contraseña = password_hash($cadena, PASSWORD_BCRYPT);
         return $this->contraseña;
     }
 }

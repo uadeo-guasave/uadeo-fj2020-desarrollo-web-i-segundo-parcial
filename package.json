@@ -23,6 +23,7 @@
   "homepage": "https://github.com/udo-guasave/uadeo-fj2020-desarrollo-web-i-segundo-parcial#readme",
   "dependencies": {
     "@prettier/plugin-php": "^0.14.0",
+    "bulma": "^0.8.2",
     "prettier": "^2.0.4"
   }
 }
