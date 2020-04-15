@@ -99,6 +99,19 @@ values
     ('Covid','Diecinueve','covid19','covid.19@ya.dejanos.salir','123',4);
 ```
 
+### 2.3. Probar registros relacionados
+
+```sql
+select u.`id`,
+       u.`name`,
+       u.`email`,
+       u.`is_active`,
+       r.`title` 'role'
+  from `users` u
+  join `roles` r
+    on u.`role_id` = r.`id`;
+```
+
 ## Referencias
 
 -   [MySQL Data Types](https://www.mysqltutorial.org/mysql-data-types.aspx)
